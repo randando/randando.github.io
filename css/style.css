@@ -1,0 +1,69 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+*{
+  margin: 0;
+}
+
+body, .page-footer{
+  background: #05668D;
+  color: #F0F3BD;
+}
+
+.pale-text{
+  /*color: #F0F3BD;*/
+}
+
+.g-text, .g-text a{
+  margin: 0;
+  color: #02C39A;
+}
+
+.icon-block p{
+    line-height: 3.5em;
+}
+
+#profile{
+    background: #02C39A;
+    color: black;
+    width: 300px;
+    margin: 0 auto;
+    clear: both;
+    height: auto;
+    padding: .7em;
+    border-radius: 12px;
+    float: initial;
+    line-height: 1.3em;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: 1.2em;
+}
+
+.social{
+   width: fit-content;
+}
+
+.social a{
+  color: #02C39A;
+  font-size: 1.3em;
+}
+.social a:hover, .g-text a:hover{
+  color: #F0F3BD;
+}
+
+.page-footer{
+  color: black;
+}
+
+nav, .page-footer{
+  background: #028090;
+}

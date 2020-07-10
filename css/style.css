@@ -56,6 +56,11 @@ h1.pale-text{
     line-height: 3.5em;
 }
 
+.bottom{
+    position: absolute;
+    bottom: 2em;
+}
+
 #profile{
     background: #127ba5;
     width: 300px;
@@ -86,7 +91,15 @@ h1.pale-text{
 .social{
    width: fit-content;
 }
-
+.modal{
+  max-height: none;
+}
+.modal-content{
+  min-height: 500px;
+}
+.img-center{
+  margin: 0 auto;
+}
 .social a{
   color: #02C39A;
   font-size: 1.3em;
@@ -110,4 +123,9 @@ h1.pale-text{
 
 nav{
   background: #054f6d;
+}
+#scroll{
+  position: fixed;
+    right: 10%;
+    top: 30%;
 }

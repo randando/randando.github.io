@@ -22,8 +22,16 @@
       <nav role="navigation">
         <div class="nav-wrapper container pale-text"><a id="logo-container" href="#" class="brand-logo"></a></div>
       </nav>
-
-      <div class="section no-pad-bot" id="index-banner">
+      <!--scrollSpy menu-->
+      <div class="row" id="scroll">
+        <div class="col hide-on-small-only m3 l2">
+          <ul class="section table-of-contents">
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#connect">Connect</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="section no-pad-bot scrollspy" id="introduction">
         <div class="container">
           <h1 class="header center pale-text">ando</h1>
           <div class="row center">
@@ -44,12 +52,17 @@
                   <img class="activator" src="assets/img2.jpg">
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator white-text text-darken-4">GenAlgo<i class="material-icons right">more_vert</i></span>
-                  <p><a href="#">Demo</a>&nbsp;&nbsp;&nbsp;<span class="grey-text">|</span>&nbsp;&nbsp;&nbsp;<a href="#">Source</a></p>
+                  <span class="card-title activator pale-text text-darken-4">GenAlgo<i class="material-icons right">more_vert</i></span>
+                  <a class="modal-trigger" href="#modal1">Demo</a>
                 </div>
                 <div class="card-reveal dark">
-                  <span class="card-title white-text text-darken-4">GenAlgo<i class="material-icons right">close</i></span>
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  <span class="card-title pale-text text-darken-4">GenAlgo<i class="material-icons right">close</i></span>
+                  <p class="white-text">Stirring agents evolve to find a target.</p><br>
+                  <div class="chip">p5.js</div>
+                  <div class="chip">VueJS</div>
+                  <div class="chip">Chart.js</div>
+                  <div class="chip">MaterializeCSS</div>
+                  <p><a href="https://github.com/randando/GeneticAlgo" class="bottom" target="_blank">Source</a></p>
                 </div>
               </div>
 
@@ -60,16 +73,37 @@
                   <img class="activator" src="assets/img1.jpg">
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator white-text text-darken-4">RPS Game<i class="material-icons right">more_vert</i></span>
-                  <p><a href="#">Demo</a></p>
+                  <span class="card-title activator pale-text text-darken-4">RPS Game<i class="material-icons right">more_vert</i></span>
+                  <a class="modal-trigger" href="#modal2">Demo</a>
                 </div>
                 <div class="card-reveal dark">
-                  <span class="card-title grey-text text-darken-4">RPS Game<i class="material-icons right">close</i></span>
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  <span class="card-title pale-text text-darken-4">RPS Game<i class="material-icons right">close</i></span>
+                  <p class="white-text">Rock, Paper, Scissor with score count.</p><br>
+                  <div class="chip">Vanilla JS</div>
+                  <p><a href="https://github.com/randando/RPS-Game" class="bottom" target="_blank">Source</a></p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="section scrollspy" id="connect">
+        <div class="container">
+            <h4>connect</h4>
+            <div style="height:200px;background:#054f6d;width:100%;"></div>          
+        </div>
+      </div>
+
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content valign-wrapper">
+          <img src="http://i.stack.imgur.com/SBv4T.gif" alt="this slowpoke moves" class="img-center" />
+        </div>
+      </div>
+      <div id="modal2" class="modal">
+        <div class="modal-content valign-wrapper">
+          <img src="http://i.stack.imgur.com/SBv4T.gif" alt="this slowpoke moves" class="img-center" />
         </div>
       </div>
       <!--
@@ -128,6 +162,14 @@
       </footer>
       </div>
     </div>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.modal').modal();
+      });
+      $(document).ready(function() {
+        $('.scrollspy').scrollSpy();
+      });
+    </script>
 </body>
 
 </html>

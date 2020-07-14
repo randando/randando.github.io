@@ -9,7 +9,7 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/main.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
@@ -20,11 +20,11 @@
   <div id="page-container">
     <div id="content-wrap">
       <nav role="navigation">
-        <div class="nav-wrapper container pale-text"><a id="logo-container" href="#" class="brand-logo"></a></div>
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a></div>
       </nav>
       <!--scrollSpy menu-->
       <div class="row" id="scroll">
-        <div class="col hide-on-small-only m3 l2">
+        <div class="col hide-on-med-and-down m3 l2">
           <ul class="section table-of-contents">
             <li><a href="#introduction">Introduction</a></li>
             <li><a href="#connect">Connect</a></li>
@@ -33,7 +33,7 @@
       </div>
       <div class="section no-pad-bot scrollspy" id="introduction">
         <div class="container">
-          <h1 class="header center pale-text">ando</h1>
+          <h1 class="header center">ando</h1>
           <div class="row center">
             <p class="header col s12 light" id="profile">Hello, I'm a full stack developer based in NJ. You can view some of my works here.</p>
           </div>
@@ -45,39 +45,37 @@
           <h4>projects</h4>
           <p class="flow-text">include academic work and tinkering with new libraries/frameworks. </p>
           <div class="row">
-            <div class="col s12 m6">
-
+            <div class="col m6 s12">
               <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img class="activator" src="assets/img2.jpg">
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator pale-text text-darken-4">GenAlgo<i class="material-icons right">more_vert</i></span>
+                  <span class="card-title activator text-darken-4">GenAlgo<i class="material-icons right">more_vert</i></span>
                   <a class="modal-trigger" href="#modal1">Demo</a>
                 </div>
                 <div class="card-reveal dark">
-                  <span class="card-title pale-text text-darken-4">GenAlgo<i class="material-icons right">close</i></span>
-                  <p class="white-text">Stirring agents evolve to find a target.</p><br>
+                  <span class="card-title text-darken-4">GenAlgo<i class="material-icons right">close</i></span>
+                  <p class="white-text">Steering agents evolve to find target.</p><br>
                   <div class="chip">p5.js</div>
                   <div class="chip">VueJS</div>
                   <div class="chip">Chart.js</div>
-                  <div class="chip">MaterializeCSS</div>
                   <p><a href="https://github.com/randando/GeneticAlgo" class="bottom" target="_blank">Source</a></p>
                 </div>
               </div>
 
             </div>
-            <div class="col s12 m6">
+            <div class="col m6 s12">
               <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img class="activator" src="assets/img1.jpg">
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator pale-text text-darken-4">RPS Game<i class="material-icons right">more_vert</i></span>
+                  <span class="card-title activator text-darken-4">RPS Game<i class="material-icons right">more_vert</i></span>
                   <a class="modal-trigger" href="#modal2">Demo</a>
                 </div>
                 <div class="card-reveal dark">
-                  <span class="card-title pale-text text-darken-4">RPS Game<i class="material-icons right">close</i></span>
+                  <span class="card-title text-darken-4">RPS Game<i class="material-icons right">close</i></span>
                   <p class="white-text">Rock, Paper, Scissor with score count.</p><br>
                   <div class="chip">Vanilla JS</div>
                   <p><a href="https://github.com/randando/RPS-Game" class="bottom" target="_blank">Source</a></p>
@@ -90,11 +88,9 @@
       <div class="section scrollspy" id="connect">
         <div class="container">
             <h4>connect</h4>
-            <div style="height:200px;background:#054f6d;width:100%;"></div>          
+            <div></div>
         </div>
       </div>
-
-
       <!-- Modal Structure -->
       <div id="modal1" class="modal">
         <div class="modal-content valign-wrapper">

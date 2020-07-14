@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+}
+
+.page-footer,
+body {
+  background: #05668D;
+  color: #F0F3BD;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#page-container nav {
+  background: #054f6d;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+  /* Footer height */
+}
+
+.container {
+  max-width: 680px;
+}
+.container .header {
+  color: #F0F3BD;
+}
+
+#scroll {
+  position: fixed;
+  right: 10%;
+  top: 30%;
+}
+#scroll a {
+  color: #F0F3BD;
+  opacity: 0.8;
+}
+
+#profile {
+  font-size: 1.3em;
+  color: white;
+  opacity: 0.8;
+  border-radius: 12px;
+  background: #127ba5;
+  width: 300px;
+  margin: 0 auto;
+  padding: 0.7em;
+  float: initial;
+}
+
+.flow-text {
+  font-size: 1.3em;
+  color: white;
+  opacity: 0.8;
+  font-weight: lighter;
+  margin-bottom: 1.3em;
+}
+
+.card {
+  border-radius: 8px;
+}
+.card .card-title {
+  color: #F0F3BD;
+}
+.card .card-content,
+.card .card-reveal {
+  background-color: #054f6d;
+}
+.card .bottom {
+  position: absolute;
+  bottom: 2em;
+}
+
+#connect .container div {
+  border-radius: 12px;
+  height: 200px;
+  background: #054f6d;
+  width: 100%;
+}
+
+.modal {
+  max-height: none;
+}
+.modal .modal-content {
+  min-height: 500px;
+}
+.modal .modal-content .img-center {
+  margin: 0 auto;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  line-height: 0;
+}
+#footer .row {
+  margin-bottom: 0;
+  background: #054f6d;
+}
+
+/*# sourceMappingURL=main.css.map */

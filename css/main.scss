@@ -1,0 +1,112 @@
+$dark: #054f6d;
+$light: #05668D;
+$lighter: #127ba5;
+$pale: #F0F3BD;
+@mixin textBox {
+  font-size: 1.3em;
+  color: white;
+  opacity: 0.8;
+}
+@mixin rounded {
+  border-radius: 12px;
+}
+
+* {
+  margin: 0;
+}
+
+.page-footer,
+body {
+  background: $light;
+  color: $pale;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  nav {
+    background: $dark;
+  }
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+  /* Footer height */
+}
+
+.container {
+  max-width: 680px;
+  .header{
+    color: $pale;
+  }
+}
+
+#scroll {
+  position: fixed;
+  right: 10%;
+  top: 30%;
+  a {
+    color: $pale;
+    opacity: 0.8;
+  }
+}
+
+#profile {
+  @include textBox;
+  @include rounded;
+  background: $lighter;
+  width: 300px;
+  margin: 0 auto;
+  padding: 0.7em;
+  float: initial;
+}
+
+.flow-text {
+  @include textBox;
+  font-weight: lighter;
+  margin-bottom: 1.3em;
+}
+
+.card {
+  border-radius: 8px;
+  .card-title {
+    color: $pale;
+  }
+  .card-content,
+  .card-reveal {
+    background-color: $dark;
+  }
+  .bottom {
+    position: absolute;
+    bottom: 2em;
+  }
+}
+
+#connect .container div {
+  @include rounded;
+  height: 200px;
+  background: $dark;
+  width: 100%;
+}
+
+.modal {
+  max-height: none;
+  .modal-content {
+    min-height: 500px;
+    .img-center {
+      margin: 0 auto;
+    }
+  }
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  line-height: 0;  
+  .row {
+    margin-bottom: 0;
+    background: $dark;
+  }
+}

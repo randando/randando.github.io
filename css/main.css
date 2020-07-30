@@ -24,7 +24,7 @@ body {
 .container {
   max-width: 680px;
 }
-.container .header {
+.container h1.header {
   color: #F0F3BD;
 }
 
@@ -64,6 +64,10 @@ body {
 .card .card-title {
   color: #F0F3BD;
 }
+.card .card-image {
+  max-height: 215px;
+  opacity: 0.87;
+}
 .card .card-content,
 .card .card-reveal {
   background-color: #054f6d;
@@ -75,19 +79,32 @@ body {
 
 #connect .container div {
   border-radius: 12px;
-  height: 200px;
-  background: #054f6d;
+  height: 150px;
   width: 100%;
 }
 
-.modal {
-  max-height: none;
+#icons a {
+  margin-right: 0.7em;
 }
-.modal .modal-content {
-  min-height: 500px;
+#icons a:hover {
+  cursor: pointer;
+}
+#icons a img {
+  width: 55px;
+}
+#icons a img:hover {
+  box-shadow: 1px 1px #054f6d, 2px 2px #054f6d, 3px 3px #054f6d;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+
+.modal {
+  max-height: 85vh;
 }
 .modal .modal-content .img-center {
   margin: 0 auto;
+  width: -webkit-fill-available;
+  max-height: -webkit-fill-available;
 }
 
 #footer {

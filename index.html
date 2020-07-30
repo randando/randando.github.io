@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-  <title>Ando Randrasan Portfolio</title>
+  <title>Ando Randrasana Portfolio</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -31,24 +31,26 @@
           </ul>
         </div>
       </div>
+      <!--Intro section-->
       <div class="section no-pad-bot scrollspy" id="introduction">
         <div class="container">
           <h1 class="header center">ando</h1>
           <div class="row center">
-            <p class="header col s12 light" id="profile">Hello, I'm a full stack developer based in NJ. You can view some of my works here.</p>
+            <p class="header col s12 light" id="profile">Hello, I'm a full stack developer based in NJ. This site contains some of my projects.</p>
           </div>
         </div>
       </div>
       <br><br>
+      <!--Projects section-->
       <div class="section">
-        <div class="container" id="works">
-          <h4>projects</h4>
+        <div class="container">
+          <h4 class="title">projects</h4>
           <p class="flow-text">include academic work and tinkering with new libraries/frameworks. </p>
           <div class="row">
             <div class="col m6 s12">
               <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="assets/img2.jpg">
+                  <img class="activator" src="assets/thumbnails/chromosomes.jpg">
                 </div>
                 <div class="card-content">
                   <span class="card-title activator text-darken-4">GenAlgo<i class="material-icons right">more_vert</i></span>
@@ -63,12 +65,11 @@
                   <p><a href="https://github.com/randando/GeneticAlgo" class="bottom" target="_blank">Source</a></p>
                 </div>
               </div>
-
             </div>
             <div class="col m6 s12">
               <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="assets/img1.jpg">
+                  <img class="activator" src="assets/thumbnails/scissors.jpg">
                 </div>
                 <div class="card-content">
                   <span class="card-title activator text-darken-4">RPS Game<i class="material-icons right">more_vert</i></span>
@@ -85,21 +86,27 @@
           </div>
         </div>
       </div>
+      <!--Connect section-->
       <div class="section scrollspy" id="connect">
         <div class="container">
-            <h4>connect</h4>
-            <div></div>
+          <h4>connect</h4>
+          <div id="icons">
+            <a href="https://www.linkedin.com/in/ando-randrasana-191397105/" target="_blank"><img src="assets/icons/linkedin.png" alt=""></a>
+            <a href="https://vimeo.com/user64352044" target="_blank"><img src="assets/icons/vimeo.png" alt=""></a>
+            <a href="https://twitter.com/randomie7" target="_blank"><img src="assets/icons/twitter.png" alt=""></a>
+            <a href="mailto:andorandrasana@gmail.com"><img src="assets/icons/email.png" alt="" target="_blank"></a>
+          </div>
         </div>
       </div>
       <!-- Modal Structure -->
       <div id="modal1" class="modal">
         <div class="modal-content valign-wrapper">
-          <img src="http://i.stack.imgur.com/SBv4T.gif" alt="this slowpoke moves" class="img-center" />
+          <img src="assets/gifs/ga.gif" alt="this slowpoke moves" class="img-center" />
         </div>
       </div>
       <div id="modal2" class="modal">
         <div class="modal-content valign-wrapper">
-          <img src="http://i.stack.imgur.com/SBv4T.gif" alt="this slowpoke moves" class="img-center" />
+          <img src="assets/gifs/rps.gif" alt="this slowpoke moves" class="img-center" />
         </div>
       </div>
       <!--
@@ -151,21 +158,21 @@
 -->
           <div class="footer-copyright">
             <div class="container center">
-              &copy;Ando Randrasana
+              &copy;2020 Ando Randrasana
             </div>
           </div>
 
       </footer>
-      </div>
     </div>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('.modal').modal();
-      });
-      $(document).ready(function() {
-        $('.scrollspy').scrollSpy();
-      });
-    </script>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.modal').modal();
+    });
+    $(document).ready(function() {
+      $('.scrollspy').scrollSpy();
+    });
+  </script>
 </body>
 
 </html>
